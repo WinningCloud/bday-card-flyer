@@ -12,7 +12,11 @@ async function getImage() {
 
     const data = await response.json();
     console.log("Cat API response:", data); // Check what’s returned
-    return data[0]?.url; // Optional chaining to avoid undefined errors
+    if (data && data[0]?.url) {
+            return data[0].url;
+        } else {
+            return "images/image.png"; // fallback image
+        }
 }
 
 
