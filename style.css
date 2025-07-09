@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Fascinate+Inline&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lunasima:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+body{
+    background-color: #EF89B0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.main-container{
+    background-color: white;
+    width: 20vw;
+    min-width: 373px;
+    border-radius: 8px;
+    padding: 25px;
+     box-shadow: 15px 20px 40px rgba(0, 0, 0, 0.55);;
+}
+
+.headingText{
+    font-size: 30px;
+}
+
+#listText li{
+    display: flex;
+    align-items: center;
+       font-weight: 300;
+}
+
+#listText img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+
+}
+
+.data{
+    display: flex;
+    flex-direction: column;
+}
+
+.buttonText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+       font-weight: 200;
+}
+
+/* .buttonText button{
+    width: 230px;
+    outline: none;
+    border: none;
+    background-color: pink;
+    font-size: 15px;
+    height: 25px;
+    margin-top: 30px;
+} */
+
+.data{
+    padding: 5px;
+    font-size: 20px;
+}
+
+.buttonText button {
+    width: 230px;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #f54ea2, #ff7676);
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin-top: 50px;
+}
+
+.buttonText button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
