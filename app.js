@@ -44,7 +44,7 @@ async function createUserList() {
         let imageData = await getImage();
         let Uimg = document.createElement("img");
         Uimg.src = imageData;
-        console.log(Uimg.src);
+     
 
         let Ubday = document.createElement("p");
         Ubday.classList = "bday";
@@ -65,3 +65,7 @@ async function createUserList() {
 
 
 createUserList();
+
+let fImg = document.querySelector("#farhaImg");
+fImg.src = "images/image.png"
+
